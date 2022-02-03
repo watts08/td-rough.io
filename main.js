@@ -51,7 +51,7 @@ window.requestAnimationFrame(render);
 //-- Camera
             const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 100 );
             scene.add( camera );
-			camera.position.set(5.3,9,0);
+			camera.position.set(5.3,9,400);
 
 
 //--Renderer
