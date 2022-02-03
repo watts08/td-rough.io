@@ -51,7 +51,7 @@ window.requestAnimationFrame(render);
 //-- Camera
             const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 100 );
             scene.add( camera );
-			camera.position.set(5.3,9,400);
+			camera.position.set(5.3,100,3.9);
 
 
 //--Renderer
@@ -68,6 +68,7 @@ window.requestAnimationFrame(render);
 
 		const EPS = 1e-5;
 			// camera.position.set( 0, 0,- EPS );
+			camera.position.z = 100;
 			const cameraControls = new CameraControls( camera, renderer.domElement );
  cameraControls.azimuthRotateSpeed = - 0.2; // negative value to invert rotation direction
  cameraControls.polarRotateSpeed   = - 0.2; // negative value to invert rotation direction
