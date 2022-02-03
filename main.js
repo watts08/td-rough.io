@@ -67,7 +67,8 @@ window.requestAnimationFrame(render);
 
 
 		const EPS = 1e-5;
-			// camera.position.set( 0, 0,- EPS );
+			camera.position.set( 0, 0,- EPS );
+			camera.position.z = 100
 			const cameraControls = new CameraControls( camera, renderer.domElement );
  cameraControls.azimuthRotateSpeed = - 0.2; // negative value to invert rotation direction
  cameraControls.polarRotateSpeed   = - 0.2; // negative value to invert rotation direction
