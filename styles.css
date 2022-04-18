@@ -4,8 +4,10 @@
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
-#joystick-area::selection {
-   background: none;
+
+#video {
+   position: relative;
+   z-index: -1000;
 }
 
 
@@ -14,6 +16,7 @@
     left: 0;
     top: 0;
     cursor: grab;
+    width: 100%;
 }
 
 #blocker {
@@ -71,6 +74,8 @@
    transition: all 0.3s linear;
    overflow: hidden;
 }
+
+
 
 #percentage {
     color: white;
